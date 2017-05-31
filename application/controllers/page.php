@@ -51,10 +51,13 @@ public function __construct() {
 		$this->load->view('gantipassword');
 		$this->load->view('footer');
 	}
-	public function mail(){
+	public function form_confirm(){
+		if($this->session->userdata('status') != "login" || $this->session->userdata('status') == "" || $this->session->userdata('status') == null ){
+			redirect(base_url());
+		}
 		$this->session->set_userdata('page', 'mail');
 		$this->load->view('header');
-		$this->load->view('mail');
+		$this->load->view('form-confirm');
 		$this->load->view('footer');
 	}
 	public function form_confirm() {
