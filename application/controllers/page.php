@@ -11,8 +11,12 @@ public function __construct() {
 }
 	public function index() {
 		$this->session->set_userdata('page','home');
+	
+		    $data['kain'] =$this->produk_model->getProdukKain();
+		    $data['kemeja']=$this->produk_model->getProdukKemeja();
+		    $data['mukena']=$this->produk_model->getProdukMukenaHome();
 		$this->load->view('header');
-		$this->load->view('home');
+		$this->load->view('home', array('data' =>  $data));
 		$this->load->view('footer');
 	}
 	public function about() {
@@ -52,18 +56,19 @@ public function __construct() {
 		$this->load->view('footer');
 	}
 	public function form_confirm(){
-		if($this->session->userdata('status') != "login" || $this->session->userdata('status') == "" || $this->session->userdata('status') == null ){
+	    if($this->session->userdata('status') != "login" || $this->session->userdata('status') == "" || $this->session->userdata('status') == null ){
 			redirect(base_url());
-		}
+			}
 		$this->session->set_userdata('page', 'mail');
 		$this->load->view('header');
 		$this->load->view('form-confirm');
 		$this->load->view('footer');
 	}
-	public function form_confirm() {
-		$this->session->set_userdata('page','form-confirm');
+	public function sandals() {
+		$this->session->set_userdata('page','sandals');
+		$dataProduk = $this->produk_model->getProdukMukena();
 		$this->load->view('header');
-		$this->load->view('form-confirm');
+		$this->load->view('sandals', array('dataproduk' => $dataProduk));
 		$this->load->view('footer');
 	}
 	public function products() {
@@ -86,8 +91,10 @@ public function __construct() {
 		$this->load->view('footer');
 	}
 	public function salwars(){
+	    $this->session->set_userdata('page','salwars');
+		$dataProduk = $this->produk_model->getProdukKemejaA();
 		$this->load->view('header');
-		$this->load->view('salwars');
+		$this->load->view('salwars', array('dataproduk' => $dataProduk));
 		$this->load->view('footer');
 	}
 	public function jeans(){
@@ -114,13 +121,17 @@ public function __construct() {
 		$this->load->view('footer');
 	}
 	public function sarees(){
+	    $this->session->set_userdata('page','sarees');
+		$dataProduk = $this->produk_model->getProdukKemejaB();
 		$this->load->view('header');
-		$this->load->view('sarees');
+		$this->load->view('sarees', array('dataproduk' => $dataProduk));
 		$this->load->view('footer');
 	}
-	public function skirt(){
+	public function skirts(){
+	    $this->session->set_userdata('page','skirts');
+		$dataProduk = $this->produk_model->getProdukKainC();
 		$this->load->view('header');
-		$this->load->view('skirts');
+		$this->load->view('skirts', array('dataproduk' => $dataProduk));
 		$this->load->view('footer');
 	}
     public function orderwrong(){
