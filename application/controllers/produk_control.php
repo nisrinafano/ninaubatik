@@ -4,6 +4,7 @@ class Produk_control extends CI_Controller {
         parent::__construct();
         $this->load->model('customer_model');
         $this->load->model('produk_model');
+        $this->load->model('order_model');
         $this->load->helper('url_helper');
     }
     
@@ -221,6 +222,29 @@ class Produk_control extends CI_Controller {
     public function delete($kodeProduk){
         $this->produk_model->delete_barang($kodeProduk); //update datanya
         redirect('produk_control');
+    }
+	public function updateOrder() {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->library('upload');
+        $is_submit = $this->input->post('is_submit');
+        $statusOrder = $this->input->post('orderStatus');
+        $id = $this->input->post('kodeProduk');
+        $resi = $this->input->post('shippingResi');
+        $payment = $this->input->post('paymentMethod');
+        if(isset($is_submit)) {
+            $dataupdate = array(
+            'orderStatus' => $statusOrder,
+            'shippingResi' => $resi,
+            'paymentMethod' => $payment
+            );
+            $this->order_model->update_barang($id, $dataupdate);
+            redirect('admin_control/order');
+        }
+        else {
+            $dataorder['order'] = $this->order_model->getOrder_id($id);
+            $this->load->view('admin/order-update', $dataorder);
+        }        
     }
 }
 ?>

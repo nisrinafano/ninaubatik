@@ -55,6 +55,30 @@ class Invoice extends CI_Controller {
             redirect('page/orderwrong');
         }
     }
+	
+	public function update() {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->library('upload');
+        $is_submit = $this->input->post('is_submit');
+        $statusOrder = $this->input->post('orderStatus');
+        $id = $this->input->post('kodeProduk');
+        $resi = $this->input->post('shippingResi');
+        $payment = $this->input->post('paymentMethod');
+        if(isset($is_submit)) {
+            $dataupdate = array(
+            'orderStatus' => $statusOrder,
+            'shippingResi' => $resi,
+            'paymentMethod' => $payment
+            );
+            $this->order_model->update_barang($id, $dataupdate);
+            redirect('admin_control/order');
+        }
+        else {
+            $dataorder['order'] = $this->order_model->getOrder_id($id);
+            $this->load->view('admin/order-update', $dataorder);
+        }        
+    }
     
     public function updateBarang($kodeProduk, $qty) {
         $stokbarang = $this->produk_model->getProduk_id($kodeProduk)['jumlah'];
