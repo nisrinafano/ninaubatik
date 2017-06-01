@@ -1,8 +1,8 @@
 
 <!-- banner -->
-	<div class="banner7" id="home1">
+	<div class="banner1" id="home1">
 		<div class="container">
-			<h2>Women Sarees<span>up to</span> Flat 40% <i>Discount</i></h2>
+			<h2>Kemeja batik tulis <span>berkualitas</span> dengan harga terjangkau!</h2>
 		</div>
 	</div>
 <!-- //banner -->
@@ -38,9 +38,9 @@
 								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 								  <div class="panel-body panel_text">
 									<ul>
-										<li><a href="<?php echo base_url().'index.php/page/dresses'?>">Harga dibawah Rp100.000</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/sweaters'?>">Harga Rp100.000 - Rp300.000</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/skirts'?>">Harga diatas Rp300.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainA'?>">Harga dibawah Rp100.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainB'?>">Harga Rp100.000 - Rp300.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainC'?>">Harga diatas Rp300.000</a></li>
 									</ul>
 								  </div>
 								</div>
@@ -56,29 +56,16 @@
 								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								   <div class="panel-body panel_text">
 									<ul>
-										<li><a href="<?php echo base_url().'index.php/page/salwars'?>">Lengan Panjang</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/sarees'?>">Lengan Pendek</a></li>
+										<li><a href="<?php echo base_url().'index.php/kemejaA'?>">Lengan Panjang</a></li>
+										<li><a href="<?php echo base_url().'index.php/kemejaB'?>">Lengan Pendek</a></li>
 									</ul>
 								  </div>
 								</div>
 							  </div>
 							</div>
 							<ul class="panel_bottom">
-								<li><a href="<?php echo base_url().'index.php/page/sandals'?>">Mukenah</a></li>
+								<li><a href="<?php echo base_url().'index.php/mukena'?>">Mukenah</a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="w3ls_dresses_grid_left_grid">
-						<h3>Size</h3>
-						<div class="w3ls_dresses_grid_left_grid_sub">
-							<div class="ecommerce_color ecommerce_size">
-								<ul>
-									<li><a href="#">Medium</a></li>
-									<li><a href="#">Large</a></li>
-									<li><a href="#">Extra Large</a></li>
-									<li><a href="#">Small</a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -100,256 +87,37 @@
 						<div class="clearfix"> </div>
 					</div>
 					<div class="w3ls_dresses_grid_right_grid3">
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Designer Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$420</span> <i class="item_price">$340</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-								<div class="dresses_grid_pos">
-									<h6>New</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r9.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Wedding Green Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$320</span> <i class="item_price">$250</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r9.jpg" alt=" " class="img-responsive" />
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Paithani Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$231</span> <i class="item_price">$200</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="w3ls_dresses_grid_right_grid3">
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r9.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Wedding Green Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$323</span> <i class="item_price">$270</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r9.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Silk Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$233</span> <i class="item_price">$190</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Light Green Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$342</span> <i class="item_price">$270</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-								<div class="dresses_grid_pos">
-									<h6>New</h6>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="w3ls_dresses_grid_right_grid3">
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Silk Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$312</span> <i class="item_price">$212</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-								<div class="dresses_grid_pos">
-									<h6>New</h6>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r9.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<img src="images/r8.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Black Border Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$234</span> <i class="item_price">$180</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
-							<div class="agile_ecommerce_tab_left dresses_grid">
-								<div class="hs-wrapper hs-wrapper2">
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r1.jpg" alt=" " class="img-responsive" />
-									<img src="images/r2.jpg" alt=" " class="img-responsive" />
-									<img src="images/r3.jpg" alt=" " class="img-responsive" />
-									<img src="images/r4.jpg" alt=" " class="img-responsive" />
-									<img src="images/r5.jpg" alt=" " class="img-responsive" />
-									<img src="images/r6.jpg" alt=" " class="img-responsive" />
-									<img src="images/r7.jpg" alt=" " class="img-responsive" />
-									<div class="w3_hs_bottom w3_hs_bottom_sub1">
-										<ul>
-											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<h5><a href="single.html">Silk Saree</a></h5>
-								<div class="simpleCart_shelfItem">
-									<p><span>$323</span> <i class="item_price">$250</i></p>
-									<p><a class="item_add" href="#">Add to cart</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
+					<?php foreach ($dataproduk as $d){ ?>
+                      <div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
+                       <div class="agile_ecommerce_tab_left dresses_grid">
+                        <div class="hs-wrapper hs-wrapper2">
+                         <img src="<?php echo base_url()."/uploads/".$d['gambar']; ?>" alt=" " class="img-responsive" />
+                         <img src="<?php echo base_url()."/uploads/".$d['gambar1']; ?>" alt=" " class="img-responsive" />
+                                                    <img src="<?php echo base_url()."/uploads/".$d['gambar']; ?>" alt=" " class="img-responsive" />
+                         <img src="<?php echo base_url()."/uploads/".$d['gambar1']; ?>" alt=" " class="img-responsive" />
+                                                    <img src="<?php echo base_url()."/uploads/".$d['gambar']; ?>" alt=" " class="img-responsive" />
+                         <img src="<?php echo base_url()."/uploads/".$d['gambar1']; ?>" alt=" " class="img-responsive" />
+                         <!--<div class="w3_hs_bottom w3_hs_bottom_sub1">
+                          <ul>
+                           <li>
+                            <a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                           </li>
+                          </ul>
+                         </div>-->
+                        </div>
+                        <h5><a href="<?php echo base_url().'index.php/page/single/'.$d['kodeProduk']; ?>"><?php echo $d['namaProduk']?></a></h5>
+                        <div class="simpleCart_shelfItem">
+                         <p><i class="item_price">Rp <?php echo number_format($d['hargaJual'],0,',','.'); ?></i></p>
+                         <p><a class="item_add" href="<?php echo base_url()."index.php/cart/add_to_cart/".$d['ID'] ;?>">Add to cart</a></p>
+                        </div>
+                        <div class="dresses_grid_pos">
+                         <h6>New</h6>
+                        </div>
+                       </div>
+                      </div>
+                                        <?php } ?>
+                      <div class="clearfix"> </div>
+                     </div>
 					</div>
 					<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
 						<div class="modal-dialog" role="document">
