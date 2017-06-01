@@ -35,7 +35,7 @@ public function __construct() {
 			$config['smtp_port'] = '465';
 			$config['smtp_timeout'] = '7';
 			$config['smtp_user'] = 'ninaubatik@gmail.com';
-			$config['smtp_pass'] = 'baytijannati99';
+			$config['smtp_pass'] = '';
 			$config['charset'] = 'utf-8';
 			$config['newline'] = "\r\n";
 			$config['mailtype'] = 'html';
