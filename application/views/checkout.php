@@ -65,9 +65,7 @@
 		</table>
 				
 				</div>
-                    <div class="checkout-right-basket">
-                        <a href="<?php echo base_url().'index.php/invoice/addOrder'?>"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Kirim Tagihan</a>
-                    </div>
+                  
 				<div class="clearfix"> </div>
 			</div>
 		</div>

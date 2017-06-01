@@ -243,7 +243,7 @@
 		</div>
 	</div>
 					<!--modal-video-->
-				<!--<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+				<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -652,7 +652,7 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>-->
+	</div>
 <!-- //banner-bottom -->
 <!-- newsletter -->
 	

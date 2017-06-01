@@ -45,15 +45,30 @@
               </div>
             </div>
             <div class="form-group">
+              <label class="col-md-3 control-label" for="textinput">Bank Pengirim
+              </label>  
+              <div class="col-md-9">
+              <input  name="bank" type="text" class="form-control input-md" required="" > <br>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="textinput">Rekening Asal
+              </label>  
+              <div class="col-md-9">
+              <input  name="rek" type="text" class="form-control input-md" required="" > <br>
+              </div>
+            </div>
+            <!--<div class="form-group">
               <label class="col-md-3 control-label" for="textinput">Bukti Pembayaran
               </label>
               <div class="col-md-9">
-                <input type="file" name="userFile" id="userFile"> <br>
+                <input type="file" name="userFile" id="userFile" size=20> <br>
               </div>  
-            </div>
+            </div>-->
              <div class="form-group">
               <label class="col-md-3 control-label" for="singlebutton"></label>
               <div class="col-md-9">
+                <input type="hidden" name="is_submit" value="1" />
                 <button  name="singlebutton" class="btn btn-primary" type="submit">submit</button>
               </div>
             </div>

@@ -2,7 +2,7 @@
 <!-- banner -->
 	<div class="banner1" id="home1">
 		<div class="container">
-			<h2>Kain batik tulis<span>berkualitas</span> dengan harga terjangkau!</h2>
+			<h2>Kain batik tulis <span>berkualitas</span> dengan harga terjangkau!</h2>
 		</div>
 	</div>
 <!-- //banner -->
@@ -38,9 +38,9 @@
 								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 								  <div class="panel-body panel_text">
 									<ul>
-										<li><a href="<?php echo base_url().'index.php/page/dresses'?>">Harga dibawah Rp100.000</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/sweaters'?>">Harga Rp100.000 - Rp300.000</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/skirts'?>">Harga diatas Rp300.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainA'?>">Harga dibawah Rp100.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainB'?>">Harga Rp100.000 - Rp300.000</a></li>
+										<li><a href="<?php echo base_url().'index.php/kainC'?>">Harga diatas Rp300.000</a></li>
 									</ul>
 								  </div>
 								</div>
@@ -56,29 +56,16 @@
 								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 								   <div class="panel-body panel_text">
 									<ul>
-										<li><a href="<?php echo base_url().'index.php/page/salwars'?>">Lengan Panjang</a></li>
-										<li><a href="<?php echo base_url().'index.php/page/sarees'?>">Lengan Pendek</a></li>
+										<li><a href="<?php echo base_url().'index.php/kemejaA'?>">Lengan Panjang</a></li>
+										<li><a href="<?php echo base_url().'index.php/kemejaB'?>">Lengan Pendek</a></li>
 									</ul>
 								  </div>
 								</div>
 							  </div>
 							</div>
 							<ul class="panel_bottom">
-								<li><a href="<?php echo base_url().'index.php/page/sandals'?>">Mukenah</a></li>
+								<li><a href="<?php echo base_url().'index.php/mukena'?>">Mukena</a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="w3ls_dresses_grid_left_grid">
-						<h3>Size</h3>
-						<div class="w3ls_dresses_grid_left_grid_sub">
-							<div class="ecommerce_color ecommerce_size">
-								<ul>
-									<li><a href="#">Medium</a></li>
-									<li><a href="#">Large</a></li>
-									<li><a href="#">Extra Large</a></li>
-									<li><a href="#">Small</a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>

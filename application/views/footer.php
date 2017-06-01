@@ -31,13 +31,11 @@ $status = ($this->session->userdata('status'));
 					<h3>Information</h3>
 					<ul class="info"> 
 						<li><a href="<?php echo base_url().'index.php/page/about'?>">About Us</a></li>
-						<li><a href="<?php echo base_url().'index.php/page/mail'?>">Contact Us</a></li>
 						<?php if($status == "login") {
-							?> <li><a href="<?php echo base_url().'index.php/page/short-codes'?>">My profile</a></li>
+							?> <li><a href="<?php echo base_url().'index.php/page/myprofile'?>">My profile</a></li>
 						<?php 
 						}?>
 						<li><a href="<?php echo base_url().'index.php/page/faq'?>">FAQ's</a></li>
-						<li><a href="<?php echo base_url().'index.php/page/products'?>">Special Products</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
@@ -53,15 +51,6 @@ $status = ($this->session->userdata('status'));
 					<ul class="info"> 
 						<li><a href="<?php echo base_url().'index.php/page/checkout'?>">My Cart</a></li>
 					</ul>
-					<h4>Follow Us</h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

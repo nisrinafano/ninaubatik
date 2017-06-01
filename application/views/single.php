@@ -96,7 +96,7 @@
 		</div>
 	</div>
 
-	<div class="w3l_related_products">
+<!--	<div class="w3l_related_products">
 		<div class="container">
 			<h3>Related Products</h3>
 			<ul id="flexiselDemo2">			
@@ -234,7 +234,7 @@
 				</script>
 				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 		</div>
-	</div>
+	</div> -->
 	<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">

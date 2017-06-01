@@ -19,73 +19,40 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <h3 class="text-center">Pengiriman dan Pembayaran</h3>
-            <form method="post">
-                <div class="form-group">
-                    <div class="col-md-3"><input type="hidden"></div>  
-                    <div class="col-md-9">
-                        <input  name="invoiceNumber" type="hidden" value="<?php echo $datacustomer['namaDepan'].' '.$datacustomer['namaBelakang'];?>"  class="form-control input-md" >
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Nama Penerima</label>  
-                    <div class="col-md-9">
-                        <input  name="customerName" type="text" value="<?php echo $datacustomer['namaDepan'].' '.$datacustomer['namaBelakang'];?>"  class="form-control input-md" >
-                    </div>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Nomor Telepon</label>  
-                    <div class="col-md-9">
-                        <input  name="customerPhone" type="text" value="<?php echo $datacustomer['noTelp'];?>"  class="form-control input-md" >
-                    </div>
-                </div>
-                <br><br>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Alamat</label>  
-                    <div class="col-md-9">
-                        <input  name="customerAddress" type="text" value="<?php echo $datacustomer['alamat'];?>"  class="form-control input-md" >
-                    </div>
-                </div>
-                <br><br>
-                <!--<div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Kota</label>  
-                    <div class="col-md-9">
-                        <input  name="customerCity" type="text" value="<?php //echo $datacustomer['kotaKab'];?>"  class="form-control input-md" >
-                    </div>
-                </div>
-                <br><br>-->
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Kota</label>
-                    <div class="col-md-9">
-                        <select name="customerCity" class="form-control">
-                            <?php foreach($ongkir as $d) { ?>
-                            <option value="<?php echo $d['kota'];?>"><?php echo $d['kota'];?></option>
-                            <?php } ?>
-                        </select>    
-                    </div>
-                </div><br><br>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="textinput">Metode Pengiriman</label>
-                    <div class="col-md-9">
-                        <select name="shippingMethod" class="form-control">
-                            <?php foreach($metode as $d) { ?>
-                            <option value="<?php echo $d['jenisPaket'];?>"><?php echo $d['jenisPaket'];?></option>
-                            <?php } ?>
-                        </select>    
-                    </div>
-                </div><br><br>
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="singlebutton"></label>
-                    <div class="col-md-4">
-                        <button  name="singlebutton" class="btn btn-primary">submit</button>
-                    </div>
-                </div>
-            </form>
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <br><br><h3 class="text-center">Terimakasih telah berbelanja di Ninau Batik</h3><br><br>
+            <h4>Berikut ini adalah rincian order Anda :</h4>
+            <table class="table">
+                <tr>
+                    <td>Nomor Invoice : </td>
+                    <td><p><?php echo $order['invoiceNumber']?></p></td>
+                </tr>
+                <tr>
+                    <td>Nama Penerima : </td>
+                    <td><p><?php echo $order['customerName']?></p></td>   
+                </tr>
+                <tr>
+                    <td>Nomor Telepon Penerima : </td>
+                    <td><p><?php echo $order['customerPhone']?></p></td>   
+                </tr>
+                <tr>
+                    <td>Alamat Penerima : </td>
+                    <td><p><?php echo $order['customerAddress']?><br><?php echo $order['customerCity']?></p></td>   
+                </tr>
+                <tr>
+                    <td>Total Pembelian : </td>
+                    <td><p>Rp <?php echo number_format($order['amount'],0,',','.'); ?></p></td>   
+                </tr>
+            </table>
+            <h5 class="text-center">Silahkan melakukan transfer sejumlah total pembelian ke :</h5><br>
+            <h6 class="text-center">Rekening BNI Syariah</h6><br>
+            <h5 class="text-center">0383 382 061</h5><br>
+            <h6 class="text-center">a.n. Nisrina Fadhilah Fano</h6><br><br><br>
+            <h6 class="text-center">Regards,</h6><br>
+            <h6 class="text-center">Ninau Batik</h6><br>
             <br><br>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-3"></div>
     </div>
 </div>

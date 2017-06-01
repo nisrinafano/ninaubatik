@@ -8,8 +8,7 @@ $email = $this->session->userdata('email');
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="Ninau Batik, an online batik shop" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
@@ -39,6 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
+<link rel="icon" href="<?=base_url().'assets/images/logo.png'?>" type="image/gif">
 <!-- //end-smooth-scrolling -->
 </head>
 	
@@ -107,7 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									});
 								});
 							</script>
-							
 						</div>
 					</div>
 				</div>
@@ -122,15 +121,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				if ($status == "login"){
 					?>
 					<a href="<?php echo base_url().'index.php/home/logout' ?>" >
-					<span class="glyphicon glyphicon-log-out" aria-hidden="true"> Logout</span> </a>
+					<span class="glyphicon glyphicon-log-out" aria-hidden="true"> Keluar</span> </a>
 				<?php }
 				else if ($_SESSION['page'] == 'home'){ ?>
 					<script>
 					$('#myModal88').modal('show');
 					</script>
-					<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"> Login</span></a>	
+					<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"> Masuk</span></a>	
 				<?php } else { 	?>
-					<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+					<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"> Masuk</span></a>
 		
 			<?php } ?>
 
@@ -146,10 +145,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         foreach($this->cart->contents() as $d) :
                             $j = $j + $d['qty']; 
                         endforeach; ?>	
-					<span class="#"></span> <span <?php echo $j; //$this->cart->total_items()?> ></span>  items</div>
+					<span class="#"></span> <span <?php echo $j; //$this->cart->total_items()?> ></span>  My Cart</div>
 					<img src="<?php echo base_url(); ?>assets/images/bag.png" alt="" />
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+			<!--	<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p> -->
 				<div class="clearfix"> </div>
 			</div>	
 			<div class="clearfix"> </div>
@@ -178,22 +177,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Kain</h6>
-											<li><a href="<?php echo base_url().'index.php/page/dresses'?>">Harga dibawah Rp100.000 <span>New</span></a></li>
-											<li><a href="<?php echo base_url().'index.php/page/sweaters'?>">Harga Rp100.000 - Rp300.000</a></li>
-											<li><a href="<?php echo base_url().'index.php/page/skirts'?>">Harga >Rp300.000</a></li>
+											<li><a href="<?php echo base_url().'index.php/kainA'?>">Harga dibawah Rp100.000</a></li>
+											<li><a href="<?php echo base_url().'index.php/kainB'?>">Harga Rp100.000 - Rp300.000</a></li>
+											<li><a href="<?php echo base_url().'index.php/kainC'?>">Harga diatas Rp300.000</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Kemeja</h6>
-											<li><a href="<?php echo base_url().'index.php/page/salwars'?>">Lengan Panjang</a></li>
-											<li><a href="<?php echo base_url().'index.php/page/sarees'?>">Lengan Pendek<span>New</span></a></li>
+											<li><a href="<?php echo base_url().'index.php/kemejaA'?>">Lengan Panjang</a></li>
+											<li><a href="<?php echo base_url().'index.php/kemejaB'?>">Lengan Pendek<span>New</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-2">
 										<ul class="multi-column-dropdown">
-											<h6>Mukenah</h6>
-											<li><a href="<?php echo base_url().'index.php/page/sandals'?>">Mukenah batik</a></li>
+											<h6>Mukena</h6>
+											<li><a href="<?php echo base_url().'index.php/mukena'?>">Mukena batik</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
