@@ -8,6 +8,27 @@ class Produk_model extends CI_Model {
         $res = $this->db->get('dataproduk');
         return $res->result_array();
     }
+	
+	public function getProdukKain() {
+        $this->db->where('jenis', 'Kain');
+        $this->db->limit(4);
+        $res = $this->db->get('dataproduk');
+        return $res->result_array();
+    }
+    
+    public function getProdukKemeja() {
+        $this->db->where('jenis', 'Kemeja');
+        $this->db->limit(4);
+        $res = $this->db->get('dataproduk');
+        return $res->result_array();
+    }
+    
+    public function getProdukMukenaHome() {
+        $this->db->where('jenis', 'Mukena');
+        $this->db->limit(4);
+        $res = $this->db->get('dataproduk');
+        return $res->result_array();
+    }
     
     public function getProdukKainA() {
         $this->db->where('kategori', 'Kain A');
@@ -35,6 +56,12 @@ class Produk_model extends CI_Model {
     
     public function getProdukKemejaB() {
         $this->db->where('kategori', 'Kemeja B');
+        $res = $this->db->get('dataproduk');
+        return $res->result_array();
+    }
+	
+	public function getProdukMukena() {
+        $this->db->where('kategori', 'Mukena');
         $res = $this->db->get('dataproduk');
         return $res->result_array();
     }
