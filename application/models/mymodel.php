@@ -20,14 +20,10 @@ class Mymodel extends CI_Model {
     	} else return false;
     	
     }
-    function getIdLogin($email) {
-        $this->db->select('idCustomer');
-        //$this->db->where('email', $email);
-    	//$this->db->from('datacustomer');
-
+    function getNamaLogin($email) {
     	$query = $this->db->get_where('datacustomer', array('email'=>$email));
     	if($query->num_rows() == 1){
-    		return $query->row();
+    		return $query->row_array();
         }
     }
     function update_data($where, $dataedit, $table) {
