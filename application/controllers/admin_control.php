@@ -5,6 +5,8 @@ class Admin_control extends CI_Controller {
         $this->load->model('customer_model');
         $this->load->model('produk_model');
         $this->load->model('order_model');
+        $this->load->model('invoice_model');
+        $this->load->model('testi_model');
         $this->load->helper('url_helper');
     }
     
@@ -51,6 +53,11 @@ class Admin_control extends CI_Controller {
         $this->load->view('admin/report-transaksi', $datacustomer);
     }
     
+    public function testi() {
+        $testimoni['testimoni'] = $this->testi_model->getTesti();
+        $this->load->view('admin/admintesti', $testimoni);
+    }
+    
     public function produk() {
         $dataproduk['dataproduk'] = $this->produk_model->getProduk();
         $this->load->view('admin/produk-upload', $dataproduk);
@@ -81,12 +88,14 @@ class Admin_control extends CI_Controller {
         $this->load->view('admin/invoice', $order);
     }
     
-    public function konfirmasi_pembayaran() {
+    /*public function konfirmasi_pembayaran() {
         $this->load->helper('form');
         $this->load->library('upload');
-
-        $fileUpload = array();
+        $is_submit = $this->input->post('is_submit');
+        if(isset($is_submit) && $is_submit == 1) {
+            $fileUpload = array();
         $isUpload = FALSE;
+        
 
         $userFile = array( 'upload_path' => './uploads/pembayaran/',
                             'allowed_type' => 'jpg|jpeg|png|gif',
@@ -112,8 +121,35 @@ class Admin_control extends CI_Controller {
                 redirect(base_url().'page/form_konfirm');
                 $this->session->set_flashdata('message_konf','Berhasil Menyimpan Bukti Pembayaran');
             } $this->session->set_flashdata('message_konf','Gagal Menyimpan Bukti Pembayaran');
-            */
+                
+            }
         }
+    }*/
+    
+    public function konfirmasi_pembayaran() {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->library('upload');
+        $is_submit = $this->input->post('is_submit');
+        $nama = $this->input->post('namapengirim');
+        //$id = $this->input->post('kodeProduk');
+        $resi = $this->input->post('noinvoice');
+        $payment = $this->input->post('bank');
+        $rek = $this->input->post('rek');
+        if(isset($is_submit)) {
+            $dataupdate = array(
+            'namapengirim' => $nama,
+            'nomorinvoice' => $resi,
+            'gambar' => $payment,
+            'rek' => $rek
+            );
+            $this->invoice_model->insert_data($dataupdate);
+            redirect('page');
+        }
+        /*else {
+            $dataorder['order'] = $this->order_model->getOrder_id($id);
+            $this->load->view('admin/order-update', $dataorder);
+        }*/        
     }
 }
 ?>
