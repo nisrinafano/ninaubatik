@@ -37,40 +37,24 @@
             <div class="col-md-2"></div>
             <div class="col-md-10">
                 <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="<?php echo base_url()."index.php/admin_control/produk";?>">Upload Produk</a></li>
-                    <li role="presentation" class="active"><a href="#">Lihat Produk</a></li>
+                    <li role="presentation" class="active"><a href="<?php echo base_url()."index.php/admin_control/testi";?>">Testimoni</a></li>
                     <table class="table">
                       <tr>
-                        <th>Kode Produk</th>
-                        <!--<th>Nama Produk</th>-->
-                        <th>Gambar</th>
-                        <!--<th>Tanggal Beli</th>-->
-                        <th>Jumlah</th>
-                        <th>Ukuran</th>
-                        <th>Berat</th>
-                        <th>Harga Beli</th>
-                        <th>Harga Jual</th>
-                        <th>Toko Beli</th>
-                        <th>Kota Beli</th>
-                        <!--<th>Keterangan</th>-->
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Testimoni</th>
+                        <th>Status</th>
                       </tr>
-                    <?php foreach ($dataproduk as $new_item) { ?>
+                    <?php foreach ($testimoni as $new_item) { ?>
                       <tr>
-                        <td><?php echo $new_item['kodeProduk']; ?></td>
-                        <!--<td><?//php echo $new_item['namaProduk']; ?></td>-->
-                        <td><img src="<?php echo base_url()."/uploads/".$new_item['gambar']; ?>" width="100"/></td>
-                        <!--<td><?//php echo $new_item['tanggalBeli']; ?></td>-->
-                        <td><?php echo $new_item['jumlah']; ?></td>
-                        <td><?php echo $new_item['ukuran']; ?></td>
-                        <td><?php echo $new_item['berat']; ?></td>
-                        <td><?php echo $new_item['hargaBeli']; ?></td>
-                        <td><?php echo $new_item['hargaJual']; ?></td>
-                        <td><?php echo $new_item['tokoBeli']; ?></td>
-                        <td><?php echo $new_item['kotaBeli']; ?></td>
-                        <!--<td><?php //echo $new_item['keterangan']; ?></td>-->
+                        <td><?php echo $new_item['ID']; ?></td>
+                        <td><?php echo $new_item['nama']; ?></td>
+                        <td><?php echo $new_item['email']; ?></td>
+                        <td><?php echo $new_item['testimoni']; ?></td>
+                        <td><?php echo $new_item['status']; ?></td>
 
-                        <td><a href="<?php echo site_url("produk_control/update/".$new_item['kodeProduk']); ?>">Update</a>
-                        <a href="<?php echo site_url("produk_control/delete/".$new_item['kodeProduk']); ?>">Delete</a></td>
+                        <td><a href="<?php echo site_url("testi_control/update/".$new_item['ID']); ?>">Detail</a></td>
                       </tr>
                     <?php } ?>
                     </table>

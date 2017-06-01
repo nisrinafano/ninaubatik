@@ -7,7 +7,7 @@
 </head>
 <body>
     <jumbotron class="text-center">
-        <h2><img src="<?php echo base_url()."/uploads/Logo.png"; ?>" width="200"/></h2>
+        <h2><img src="<?php echo base_url()."/uploads/Logo.jpg"; ?>" width="200"/></h2>
         <h4>Admin</h4>
     </jumbotron>
     <br> <br>
